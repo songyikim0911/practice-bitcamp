@@ -20,6 +20,7 @@ public class ArrayListTest1 {
     this.list[this.size++] = obj;
   }
 
+
   Object[] toArray() {//현재 저장된 값을 배열로 만들어 주는 메쏘드
     Object[] arr = new Object[this.size];
     for (int i = 0; i < this.size; i++) {

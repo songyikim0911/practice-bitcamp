@@ -8,9 +8,9 @@ public class AppTest1 {
   public static void main(String[] args) {
     // TODO Auto-generated method stub
 
-    BoardHandler boardHandler = new BoardHandler("게시판1", keyScan);
-    BoardHandler boardHandler2 = new BoardHandler("게시판2", keyScan);
-    BoardHandler boardHandler3 = new BoardHandler("게시판3", keyScan);
+    BoardHandlerTest1 boardHandler = new BoardHandlerTest1("게시판1", keyScan);
+    BoardHandlerTest1 boardHandler2 = new BoardHandlerTest1("게시판2", keyScan);
+    BoardHandlerTest1 boardHandler3 = new BoardHandlerTest1("게시판3", keyScan);
 
     menuLoop: while (true) {
       System.out.println("메뉴");
