@@ -12,9 +12,32 @@ public class Cinema {
     try {
       a.arrayList();
       loop:while(true) {
+        System.out.println("[1.회원가입]    [2. 예매]    [3. 전체 예매 현황]    [4.회원목록 조회]");
+        String sel = "9";
+        sel = sc.nextLine();
+        a.dbConnect();
+
+        switch(sel) {
+          case "1":
+            a.join(); break;
+          case "2":
+            a.getTitle();
+            a.getDate();
+            a.getSeat();
+            a.pay(); break;
+          case "3":
+            a.dbSelect(); break;
+          case "4":
+            a.jselect(); break;
+
+          case "9": System.out.println();
+          System.out.println("영화 예매 프로그램 종료하겠습니다."); break loop;
+          default : System.out.println("잘못 입력하셨습니다. 다시 입력해주세요. \n");continue;
+        }
+
 
       }
-    }
+    }catch (Exception e) {     }
   }
 
 }
