@@ -19,7 +19,7 @@ public class App {
 
       BoardHandler boardHandler = new BoardHandler("게시판1", keyScan);
       BoardHandler boardHandler2 = new BoardHandler("게시판2", keyScan);
-      MemberHandler memberHandler = new MemberHandler(KeyScan);
+      MemberHandler memberHandler = new MemberHandler(keyScan);
       ComputeHandler computeHandler = new ComputeHandler(keyScan);
 
       switch(menuNo) {
@@ -31,6 +31,9 @@ public class App {
           break;
         case"3":
           memberHandler.execute();
+          break;
+        case"4":
+          computeHandler.execute();
           break;
         case "quit":
           break menuLoop;
