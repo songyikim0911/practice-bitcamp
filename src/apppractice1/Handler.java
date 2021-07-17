@@ -1,5 +1,7 @@
 package apppractice1;
 
-public interface Handler {
+interface Handler {
+
+  void execute();
 
 }
