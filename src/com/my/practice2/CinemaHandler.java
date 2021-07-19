@@ -9,14 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-class CinemaArray{
-  int floor;
-  int room;
-  String[][] name = new String[6][10];
-}
 
+class CinemaBoard {
 
-public class CinemaHandler extends CinemaArray {
   Connection CN = null;
   Statement ST = null;
   ResultSet RS = null;
@@ -42,9 +37,26 @@ public class CinemaHandler extends CinemaArray {
   public int adate;
   public int atime;
 
+}
+
+
+public class CinemaHandler extends CinemaBoard {
+
+
+  CinemaHandler(Scanner sc){
+    this.sc = sc;
+  }
+
+  class CinemaArray{
+    int floor;
+    int room;
+    String[][] name = new String[6][10];
+  }
+
   CinemaArray[][][] arrayTest = new CinemaArray[3][7][6];
 
-  static Scanner sc = new Scanner(System.in);
+
+  Scanner sc;
 
   public void dbConnect() {
     try {
@@ -103,7 +115,7 @@ public class CinemaHandler extends CinemaArray {
         jid = sc.nextLine();
 
         ST = CN.createStatement();
-        String imsg = "select mid from member where mid = '"+jid+"'";
+        String imsg = "select mid from cinemamember where mid = '"+jid+"'";
         ResultSet rs = ST.executeQuery(imsg);
         if(rs.next()==true) {
           System.out.println("이미 사용중인 아이디입니다 다시 입력해주세요\n");continue;

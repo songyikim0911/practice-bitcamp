@@ -1,14 +1,17 @@
 package com.my.practice2;
+import java.util.Scanner;
 
-public class Cinema extends CinemaHandler {
+public class Cinema {
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
 
+    Scanner sc = new Scanner(System.in);
+
     System.out.println("\t\t\t  C I N E M A ");
     System.out.println("\t\t\t 영화 예매 시스템");
     System.out.println();
-    Cinema a = new Cinema();
+    CinemaHandler a = new CinemaHandler(sc);
     try {
 
       a.arrayList();
