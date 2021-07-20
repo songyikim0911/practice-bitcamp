@@ -1,4 +1,4 @@
-package ooppractice1;
+package ooppractice1_ex3;
 
 public class Exam2 {
 
