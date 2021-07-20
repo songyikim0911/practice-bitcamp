@@ -30,7 +30,7 @@ public class Exam9_0162 {
     //Member 클래스에 선언하는 것이 유지보수에 더 낫다.
 
     Member m4 = new Member();
-    m4.id = "aaa";
+    m4.id = "aaa";     
     m4.password ="11";
     m4.type = Member.GUEST;
 
