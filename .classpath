@@ -2,12 +2,13 @@
 <classpath>
 	<classpathentry excluding="cinemaproject_test/" kind="src" path="src"/>
 	<classpathentry kind="src" path="bcclass"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+	<classpathentry kind="src" path="projectoop"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ksi64/eclipse-workspace/ojdbc6.jar">
+	<classpathentry exported="true" kind="lib" path="C:/Users/ksi64/eclipse-workspace/ojdbc6.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
