@@ -38,7 +38,7 @@ public class ObjectDemo2 {
     //특징 2. 단,서로 다른 패키지라도 상속이 가능하다.
 
     try {
-      Student2 s2 = (Studen t2)s1.clone();
+      Student2 s2 = (Student2)s1.clone();
       System.out.println(s1.name);
       System.out.println(s2.name);
     } catch (CloneNotSupportedException e) {

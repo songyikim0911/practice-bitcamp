@@ -5,7 +5,7 @@ class Calculator{
 
   public Calculator() {}
 
-  public Calculator(int left, int right) {
+  public Calculator(int left, int right) {//부모클래스의생성자..매개변수를가지고있다.
     this.left = left;
     this.right = right;
   }

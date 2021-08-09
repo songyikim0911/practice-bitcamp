@@ -43,7 +43,7 @@ public class Calculator {
   static int base = 0 ;//클래스 변수 예시!
 
   public void setOperands(int left, int right){
-    this.left = left;//이 인스턴스의 left변수안에 left값을넣겠다.
+    this.left = left;//이 인스턴스의 left변수안에 매개변수로받은 left값을넣겠다.
     //this.left는, 이 객체(인스턴스... c1 또는 c2) 의 left 변수를 얘기한다.
     //this는 인스턴스 그 자체를 가리키는것임.
     //즉 인스턴스 마다 서로 다른 변수값을 가진다는것도 인지해야한다.
